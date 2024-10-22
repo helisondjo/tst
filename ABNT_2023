@@ -2,18 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>ABNT NBR 6023:2018 – Citação autor-data</title>
-    <title-short>ABNT</title-short>
-    <id>http://www.zotero.org/styles/abnt-nbr-6023-2018-–-citacão-autor-data</id>
-    <link rel="self" href="http://www.zotero.org/styles/abnt-nbr-6023-2018-–-citacão-autor-data"/>
-    <link href="http://www.zotero.org/styles/pesquisa-agropecuaria-brasileira" rel="template"/>
-    <author>
-      <name>Jucá Costa</name>
-<?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
-  <info>
-    <title>ABNT NBR 6023 2018 Citacao autor-data</title>
+    <title>ABNT NBR 6023 2018 Citacao autor data</title>
     <title-short>ABNT</title-short>
     <id>http://www.zotero.org/styles/abnt-nbr-6023-2018-citacao-autor-data</id>
     <link rel="self" href="http://www.zotero.org/styles/abnt-nbr-6023-2018-citacao-autor-data"/>
@@ -44,17 +33,9 @@
         <single>ed</single>
         <multiple>eds</multiple>
       </term>
-      <term name="container-author" form="short">
-        <single/>
-        <multiple/>
-      </term>
-      <term name="collection-editor" form="short">
-        <single>org</single>
-        <multiple>orgs</multiple>
-      </term>
-      <term name="editorial-director" form="short"/>
     </terms>
   </locale>
+  
   <macro name="container-contributors">
     <names variable="container-author" delimiter=", ">
       <name delimiter="; " delimiter-precedes-last="always" initialize="false" initialize-with=". " name-as-sort-order="all">
@@ -69,6 +50,7 @@
       </substitute>
     </names>
   </macro>
+  
   <macro name="secondary-contributors">
     <choose>
       <if type="chapter" match="none">
@@ -79,6 +61,7 @@
       </if>
     </choose>
   </macro>
+  
   <macro name="translator">
     <names variable="translator" prefix="Tradução: ">
       <name et-al-min="3" et-al-use-first="1" initialize="false" sort-separator=" ">
@@ -88,6 +71,7 @@
       <et-al font-style="italic"/>
     </names>
   </macro>
+  
   <macro name="author">
     <group delimiter=". ">
       <names variable="author editor collection-editor editorial-director" delimiter="; ">
@@ -105,6 +89,7 @@
       <text variable="authority"/>
     </group>
   </macro>
+  
   <macro name="author-short">
     <names variable="author">
       <name form="short" font-variant="normal" font-weight="normal" delimiter="" and="symbol" delimiter-precedes-last="never" initialize-with=". " name-as-sort-order="all">
@@ -125,22 +110,7 @@
       </substitute>
     </names>
   </macro>
-  <macro name="author-chapter">
-    <group delimiter=". ">
-      <names variable="author" delimiter="; ">
-        <name delimiter="; " delimiter-precedes-last="always" et-al-min="7" et-al-use-first="1" initialize="false" initialize-with=". " name-as-sort-order="all">
-          <name-part name="family" text-case="uppercase"/>
-          <name-part name="given"/>
-        </name>
-        <et-al/>
-        <label form="short"/>
-        <substitute>
-          <text macro="title"/>
-        </substitute>
-      </names>
-      <text variable="authority"/>
-    </group>
-  </macro>
+
   <macro name="url">
     <group delimiter=". ">
       <text variable="URL" prefix="Disponível em: "/>
@@ -151,6 +121,7 @@
       </date>
     </group>
   </macro>
+  
   <macro name="title">
     <choose>
       <if type="chapter bill article-newspaper article-journal article-magazine paper-conference post-weblog" match="any">
